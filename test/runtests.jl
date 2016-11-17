@@ -38,4 +38,3 @@ zaki_data = readcsv("../data/zaki_subset_data.csv", skipstart = 1)
 seqs2 = make_sequences(zaki_data, sid_col = 2, eid_col = 3, item_col = 1)
 @time res2 = spade(seqs2, 0.2, 6);
 
-benchmark1(100)
